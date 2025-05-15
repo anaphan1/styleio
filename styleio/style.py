@@ -1,4 +1,4 @@
-from codes import codes
+from .codes import codes
 
 def end(code):
     return code + 'm'
@@ -45,5 +45,3 @@ def _generate_code(graphics=None, color=None, mode='colors16'):
 
 def style(text, *args, **kwargs):
     return _generate_code(*args, **kwargs) + text + RESET
-
-print(style('hello', ['bold'], color='red'))
