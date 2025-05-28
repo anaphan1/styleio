@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "styleio"
-version = "0.0.2"
+version = "0.0.3"
 author = [
     { name="Anagh Phanse", email="anaghphanse@gmail.com" }
 ]
