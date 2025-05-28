@@ -13,9 +13,8 @@ Now import
 ```python
 import styleio
 ```
-Now style that IO!
 
-First, you need to think about how your IO will look like.
+First, you need to think about how your text will look like.
 You can have text styled. Just simply enter one of bold, dim, italic, underline, blink, inverse, hidden,  or strikethrough
 
 Now, color your text. Color is optional, but you have four color mode choices: rgb**, 256 colors**, 16 colors, and bright colors***
@@ -36,7 +35,7 @@ With 16 colors (normal, recommended), the mode will be 'colors16', and color wil
 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'default'
 Bright colors are just like 16 colors, its just that they will look brighter on the terminal and the mode is 'brightcolors'
 
-## Styling the IO
+## Styling the text
 
 First, specify the list of styles
 ```python
@@ -48,10 +47,11 @@ color = 'red'
 mode = 'brightcolors'
 ```
 
-Now, finally style the output
+Now, finally style the output for a italicized bold bright red "Hello, World" message to appear.
 
 ```python
 string = style(
+    text="Hello, World",
     graphics=graphics,
     color=color,
     mode=mode
